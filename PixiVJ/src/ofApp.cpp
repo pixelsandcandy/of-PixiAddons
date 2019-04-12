@@ -24,17 +24,12 @@ void ofApp::setup(){
     
     //
     
-    //ofAddListener( ofxCpr::events().onResponse, this, &ofApp::onHttpResponse );
+    ofAddListener( SERVER.onSocketMessage, this, &ofApp::onSocketMessage );
     
 }
 
-void ofApp::onHttpResponse(ofxCpr::responseEventArgs& evt){
-    ofLog() << "ofApp::onHttpResponse << " << evt.id << ": " << evt.response;
-    
-    if ( evt.id == "CheckServer" ){
-        //(evt.response == "");
-    }
-    
+void ofApp::onSocketMessage(ofxJSONElement& json){
+    ofLog() << "[JSON.getRawString()] " << json.getRawString();
 }
 
 //--------------------------------------------------------------

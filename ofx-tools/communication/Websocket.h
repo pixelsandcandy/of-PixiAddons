@@ -8,10 +8,10 @@
 class Websocket {
 public:
     
-    enum ConnectionStates {
-        CS_CLOSED,
-        CS_OPEN,
-        CS_CONNECTED
+    enum Status {
+        STATUS_CLOSED,
+        STATUS_OPEN,
+        STATUS_CONNECTED
     };
     
     Websocket();
@@ -25,13 +25,15 @@ public:
     string host;
     int port;
     string connectMessage;
+    bool listening = false;
     
     ofEvent<string> onMessageEvent;
+    ofEvent<string> onConnectedEvent;
     
     //---------------------------------------------------------------------------------
     
     ofxLibwebsockets::Client client;
-    int connectionState = CS_CLOSED;
+    int status = STATUS_CLOSED;
     
     float timeConnectionClosed;
     float timeNextConnectionAttempt = 0;

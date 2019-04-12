@@ -37,7 +37,7 @@ class ofApp : public ofBaseApp{
     
     //
     
-    void onHttpResponse(ofxCpr::responseEventArgs& evt);
+    void onSocketMessage(ofxJSONElement& json);
     
     //
     

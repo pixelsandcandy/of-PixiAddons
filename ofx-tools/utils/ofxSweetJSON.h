@@ -133,6 +133,12 @@ public:
         return *this;
     }
     
+    ofxSweetJSON& addKeyValueStr( string key, string value, bool comma = false ){
+        output += this->escape( key ) + ":" + this->escape( value );
+        if ( comma ) this->addComma();
+        return *this;
+    }
+    
     ofxSweetJSON& addKeyValue( string key, bool value, bool comma = false ){
         output += this->escape( key ) + ":" + ( value ? "true" : "false" );
         if ( comma ) this->addComma();
@@ -195,6 +201,10 @@ public:
     }
     
     string getOutput(){
+        return output;
+    }
+    
+    string getString(){
         return output;
     }
     

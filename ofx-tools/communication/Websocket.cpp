@@ -4,9 +4,14 @@ Websocket::~Websocket(){};
 Websocket::Websocket(){};
 
 void Websocket::setup( string host, int port, string connectMessage ){
+    if ( status != STATUS_CLOSED ) return;
+    
     this->host = host;
     this->port = port;
     this->connectMessage = connectMessage;
+    
+    if ( listening ) return;
+    listening = true;
     
     client.addListener(this);
     ofAddListener(ofEvents().update, this, &Websocket::update);
@@ -15,13 +20,13 @@ void Websocket::setup( string host, int port, string connectMessage ){
 void Websocket::update(ofEventArgs &e){
     //cout << "updating.. " << host << "[" << port << "]   " << ofRandom(1.0) << endl;
     
-    if ( connectionState == CS_CLOSED && ofGetElapsedTimef() > timeNextConnectionAttempt ) {
+    if ( status == STATUS_CLOSED && ofGetElapsedTimef() > timeNextConnectionAttempt ) {
         cout << "CONNECT >> " << host << "[" << port << "]   " << ofGetElapsedTimef() << endl;
         client.connect( host, port );
         timeNextConnectionAttempt = ofGetElapsedTimef() + 5.0;
     }
     
-    if (connectionState == CS_CONNECTED && ofGetElapsedTimef() > timeNextPing) {
+    if (status == STATUS_CONNECTED && ofGetElapsedTimef() > timeNextPing) {
         timeNextPing = ofGetElapsedTimef() + 15.0;
         send("[Pong]");
     }
@@ -29,7 +34,7 @@ void Websocket::update(ofEventArgs &e){
 
 void Websocket::send( string message ) {
     //cout << connectionState << endl;
-    if ( connectionState == CS_CONNECTED ) {
+    if ( status == STATUS_CONNECTED ) {
         //cout << host << "[" << port << "] >> " << message << endl;
         client.send( message );
     }
@@ -46,7 +51,7 @@ void Websocket::onConnect( ofxLibwebsockets::Event& args ){
 void Websocket::onOpen( ofxLibwebsockets::Event& args ){
     //cout << "[client] opened connection" << endl;
     
-    connectionState = CS_OPEN;
+    status = STATUS_OPEN;
     if ( connectMessage != "" ) {
         //cout << "[" << host << "] >> " << connectMessage << endl;
         client.send( connectMessage );
@@ -56,7 +61,7 @@ void Websocket::onOpen( ofxLibwebsockets::Event& args ){
 //--------------------------------------------------------------
 void Websocket::onClose( ofxLibwebsockets::Event& args ){
     //cout << "[client] closed connection" << endl;
-    connectionState = CS_CLOSED;
+    status = STATUS_CLOSED;
     timeNextConnectionAttempt = ofGetElapsedTimef() + 5;
 }
 
@@ -68,13 +73,14 @@ void Websocket::onIdle( ofxLibwebsockets::Event& args ){
 //--------------------------------------------------------------
 void Websocket::onMessage( ofxLibwebsockets::Event& args ){
     
-    //cout << "[" << host << "] >> " << args.message <<endl;
+    //cout << "[" << host << "] " << args.message <<endl;
     
-    if ( args.message == "[Ping]" ) return;
+    if ( args.message == "ping" ) return;
     
-    if ( args.message == "[Connection Accepted]" ) {
-        cout << host << "[" << port << "] >> CONNECTED" <<endl;
-        connectionState = CS_CONNECTED;
+    if ( args.message.find("[accepted]") != string::npos ) {
+        //cout << host << "[" << port << "] >> CONNECTED" <<endl;
+        status = STATUS_CONNECTED;
+        ofNotifyEvent( onConnectedEvent, args.message, this );
         return;
     }
     

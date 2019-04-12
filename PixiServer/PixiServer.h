@@ -30,8 +30,15 @@ public:
         testJSON.addKeyValue("hello", "world");
         testJSON.end();
         
+        connectionMessage.start();
+        connectionMessage.addKeyValueStr("request", "join:pixiserver");
+        connectionMessage.end();
+        
         ofAddListener( ofxCpr::events().onResponse, this, &PixiServer::_onHttpResponse );
         _check();
+        
+        ofAddListener(SOCKET.onMessageEvent, this, &PixiServer::_onSocketMessage);
+        ofAddListener(SOCKET.onConnectedEvent, this, &PixiServer::_onSocketConnected);
     };
     ~PixiServer(){};
     
@@ -39,11 +46,17 @@ public:
     
     string app_name = "";
     string server_url = "";
-    string server_port = "4242";
+    string server_host = "";
+    int server_port = 4242;
     float timeCheckStatus = 0.0;
     Status status = STATUS_CHECKING;
     
     ofxSweetJSON testJSON;
+    ofxSweetJSON connectionMessage;
+    ofxJSONElement message;
+    Websocket SOCKET;
+    
+    ofEvent<ofxJSONElement> onSocketMessage;
     
     //---------------------------------------------------------------------------------
     
@@ -63,7 +76,7 @@ public:
         //json.objectEnd();
         json.end();
         
-        payload = json.getOutput();
+        payload = json.getString();
         
         ofxUtils::stringReplaceAll(payload, "<<DATA>>", data.getRawString());
         
@@ -78,7 +91,7 @@ public:
         
         json.addKeyValue("app_name", app_name, true);
         json.objectStart("data", false);
-        json.output += data.getOutput();
+        json.output += data.getString();
         json.end();
         
         payload = json.getOutput();
@@ -90,6 +103,18 @@ public:
     
 /////////////////////
 private:
+    void _onSocketMessage(string& msg) {
+        //ofLog() << msg;
+        if ( message.parse(msg) ){
+            //ofLog() << "[JSON] " << msg;
+            ofNotifyEvent( onSocketMessage, message, this );
+        }
+    }
+    
+    void _onSocketConnected(string& msg) {
+        ofLog() << "CONNECTED ===================================";
+    }
+    
     void _onHttpResponse(ofxCpr::responseEventArgs& evt){
         ofLog() << "PixiServer::onHttpResponse << " << evt.id << ": " << evt.response;
         
@@ -104,7 +129,15 @@ private:
                 //ofLog() << "PixiServer:STATUS_RUNNING - " << ofGetElapsedTimef();
                 timeCheckStatus = ofGetElapsedTimef() + 10.0;
                 status = STATUS_RUNNING;
-                server_url = evt.response + ":" + server_port;
+                server_host = evt.response;
+                
+                if ( !SOCKET.listening ) {
+                    server_url = server_host + ":" + ofToString(server_port);
+                    ofLog() << "server_host:" << server_host << "  server_port:" << server_port << "  server_url:" << server_url;
+                    ofLog() << "[connectionMessage] " << connectionMessage.getString();
+                    //return;
+                    SOCKET.setup(server_host, server_port, connectionMessage.getString() );
+                }
                 
                 update(testJSON);
             }
