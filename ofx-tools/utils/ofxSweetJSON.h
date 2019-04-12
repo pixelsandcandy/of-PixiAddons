@@ -84,8 +84,9 @@ public:
         return *this;
     }
     
-    ofxSweetJSON& objectStart( string key ){
-        output += this->escape(key) + ":{";
+    ofxSweetJSON& objectStart( string key, bool open = true ){
+        if ( open ) output += this->escape(key) + ":{";
+        else output += this->escape(key) + ":";
         return *this;
     }
     

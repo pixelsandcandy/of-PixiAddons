@@ -30,7 +30,6 @@
 		7262F2193CF4864D5922E591 /* PacketCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1846F52B9A1361F00C80AEA2 /* PacketCache.cpp */; };
 		72E9A08FC50C1746EBE02825 /* parameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE59F330CC83F9F3AA244D /* parameters.cpp */; };
 		7393C69879CF9C20D08EB297 /* VUISlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19721ECD046B83D35800F5D2 /* VUISlider.cpp */; };
-		7480F0CA214AC3459AC9BB23 /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6FE65B5F9A4860147B226F01 /* jsoncpp.cpp */; };
 		75AF471ABD41F8CD9BC2F2F3 /* ofxVui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4545EE072947B20B054DE204 /* ofxVui.cpp */; };
 		7C75A3023FA8CA95D98DBD4F /* timeout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE77829440401E3E3C5015 /* timeout.cpp */; };
 		7C9F575453B6A22475A49942 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60A8B65105AE969C2FC20079 /* Server.cpp */; };
@@ -66,6 +65,7 @@
 		FC7AD3562261125B00F0C1F8 /* Websocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7AD3552261125B00F0C1F8 /* Websocket.cpp */; };
 		FC7AD359226112F700F0C1F8 /* ofxSweetJSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7AD358226112F700F0C1F8 /* ofxSweetJSON.cpp */; };
 		FC7AD35D2261138100F0C1F8 /* PixiServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7AD35B2261138100F0C1F8 /* PixiServer.cpp */; };
+		FC7AD3652261244200F0C1F8 /* ofxUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7AD3642261244100F0C1F8 /* ofxUtils.cpp */; };
 		FF85C8D02E9BD0366F69D8B1 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4DCCC531B4AA8E563EE8FAE /* util.cpp */; };
 /* End PBXBuildFile section */
 
@@ -124,7 +124,6 @@
 		1DFA26F2C6BBD1B8AC24C0B1 /* ofxNetworkUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxNetworkUtils.h; path = ../../../addons/ofxNetwork/src/ofxNetworkUtils.h; sourceTree = SOURCE_ROOT; };
 		1F506D028253EF0D6A07152E /* VUIElement.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = VUIElement.cpp; path = ../../../addons/ofxVui/src/VUIElement.cpp; sourceTree = SOURCE_ROOT; };
 		2053942D8C37D9313D91E917 /* ofxLibwebsockets.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLibwebsockets.h; path = ../../../addons/ofxLibwebsocketsJSON/src/ofxLibwebsockets.h; sourceTree = SOURCE_ROOT; };
-		21282F6A8BFEE2A0151244E2 /* json-forwards.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "json-forwards.h"; path = "../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json/json-forwards.h"; sourceTree = SOURCE_ROOT; };
 		21BDE665988474F1B1F4D302 /* jsoncpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = jsoncpp.cpp; path = ../../../addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp; sourceTree = SOURCE_ROOT; };
 		22596504373FDA7ADB3084F2 /* AudioDecoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AudioDecoder.h; path = "../../../addons/ofxHapPlayer-libavformat/libs/ofxHap/include/ofxHap/AudioDecoder.h"; sourceTree = SOURCE_ROOT; };
 		242FBA83447446AAF6BBC974 /* response.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = response.h; path = ../../../addons/ofxCpr/libs/cpr/include/cpr/response.h; sourceTree = SOURCE_ROOT; };
@@ -167,12 +166,10 @@
 		657E8371991576871D4497AC /* VUITextField.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = VUITextField.cpp; path = ../../../addons/ofxVui/src/VUITextField.cpp; sourceTree = SOURCE_ROOT; };
 		65B9C588DA52E3C6878D4226 /* AudioThread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AudioThread.h; path = "../../../addons/ofxHapPlayer-libavformat/libs/ofxHap/include/ofxHap/AudioThread.h"; sourceTree = SOURCE_ROOT; };
 		660D32EBA93E7375C5765517 /* ssl_options.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ssl_options.h; path = ../../../addons/ofxCpr/libs/cpr/include/cpr/ssl_options.h; sourceTree = SOURCE_ROOT; };
-		672955F1D8E50F57A83439C2 /* json.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = json.h; path = ../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json/json.h; sourceTree = SOURCE_ROOT; };
 		67D6E9F9AB4C3D7EA6B08C2F /* cookies.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cookies.h; path = ../../../addons/ofxCpr/libs/cpr/include/cpr/cookies.h; sourceTree = SOURCE_ROOT; };
 		6A656266A483AA57A582034E /* Reactor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Reactor.cpp; path = ../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/src/Reactor.cpp; sourceTree = SOURCE_ROOT; };
 		6AAE59F330CC83F9F3AA244D /* parameters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = parameters.cpp; path = ../../../addons/ofxCpr/libs/cpr/src/parameters.cpp; sourceTree = SOURCE_ROOT; };
 		6BC7E562B4F98DD51426705A /* Reactor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Reactor.h; path = ../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include/ofxLibwebsockets/Reactor.h; sourceTree = SOURCE_ROOT; };
-		6FE65B5F9A4860147B226F01 /* jsoncpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = jsoncpp.cpp; path = ../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/jsoncpp.cpp; sourceTree = SOURCE_ROOT; };
 		71FFD50EA75BCC76F0C58D12 /* SyphonNameboundClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SyphonNameboundClient.h; path = ../../../addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h; sourceTree = SOURCE_ROOT; };
 		761F3A9EFB68929D90BC7EAB /* AudioParameters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = AudioParameters.cpp; path = "../../../addons/ofxHapPlayer-libavformat/libs/ofxHap/src/AudioParameters.cpp"; sourceTree = SOURCE_ROOT; };
 		7A83A8BF72DE9D4F1A004240 /* Events.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Events.cpp; path = ../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/src/Events.cpp; sourceTree = SOURCE_ROOT; };
@@ -239,6 +236,8 @@
 		FC7AD358226112F700F0C1F8 /* ofxSweetJSON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxSweetJSON.cpp; path = ../utils/ofxSweetJSON.cpp; sourceTree = "<group>"; };
 		FC7AD35B2261138100F0C1F8 /* PixiServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PixiServer.cpp; sourceTree = "<group>"; };
 		FC7AD35C2261138100F0C1F8 /* PixiServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixiServer.h; sourceTree = "<group>"; };
+		FC7AD3632261244100F0C1F8 /* ofxUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxUtils.h; path = "../../../ofx-tools/utils/ofxUtils.h"; sourceTree = "<group>"; };
+		FC7AD3642261244100F0C1F8 /* ofxUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxUtils.cpp; path = "../../../ofx-tools/utils/ofxUtils.cpp"; sourceTree = "<group>"; };
 		FF2B018E24837032A4878576 /* ofxEasing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxEasing.h; path = ../../../addons/ofxEasing/src/ofxEasing.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -439,7 +438,6 @@
 			isa = PBXGroup;
 			children = (
 				1D02319193D2D8D25507477D /* ofxLibwebsockets */,
-				D6FE2F460649870A49532C05 /* jsoncpp */,
 				DFA1A48B1CAFD017BD108B45 /* libwebsockets */,
 			);
 			name = libs;
@@ -494,15 +492,6 @@
 			children = (
 			);
 			name = local_addons;
-			sourceTree = "<group>";
-		};
-		6E4BB111A8D06E0CFECEDB5E /* json */ = {
-			isa = PBXGroup;
-			children = (
-				21282F6A8BFEE2A0151244E2 /* json-forwards.h */,
-				672955F1D8E50F57A83439C2 /* json.h */,
-			);
-			name = json;
 			sourceTree = "<group>";
 		};
 		7F3C04577424427D348B1425 /* ofxSyphon */ = {
@@ -692,15 +681,6 @@
 			name = include;
 			sourceTree = "<group>";
 		};
-		D6FE2F460649870A49532C05 /* jsoncpp */ = {
-			isa = PBXGroup;
-			children = (
-				6E4BB111A8D06E0CFECEDB5E /* json */,
-				6FE65B5F9A4860147B226F01 /* jsoncpp.cpp */,
-			);
-			name = jsoncpp;
-			sourceTree = "<group>";
-		};
 		DDAB44C531FB9D77DE3D79BB /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -816,6 +796,8 @@
 		FC7AD3522261124300F0C1F8 /* ofx-tools */ = {
 			isa = PBXGroup;
 			children = (
+				FC7AD3642261244100F0C1F8 /* ofxUtils.cpp */,
+				FC7AD3632261244100F0C1F8 /* ofxUtils.h */,
 				FC7AD3532261125B00F0C1F8 /* communication */,
 			);
 			path = "ofx-tools";
@@ -969,10 +951,10 @@
 				E6A280E097E0747C1DC0221C /* Reactor.cpp in Sources */,
 				5C0F6C44399859100D8AFBDE /* Connection.cpp in Sources */,
 				7C9F575453B6A22475A49942 /* Server.cpp in Sources */,
-				7480F0CA214AC3459AC9BB23 /* jsoncpp.cpp in Sources */,
 				E2564CF7DDB3713772BB682E /* ofxUDPManager.cpp in Sources */,
 				66CA411C5A9664E27326BF36 /* ofxTCPServer.cpp in Sources */,
 				125506CD3E5F428AAFE5CC65 /* ofxTCPManager.cpp in Sources */,
+				FC7AD3652261244200F0C1F8 /* ofxUtils.cpp in Sources */,
 				960D20B191346612D5C05A6A /* ofxTCPClient.cpp in Sources */,
 				8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */,
 				FC7AD35D2261138100F0C1F8 /* PixiServer.cpp in Sources */,
@@ -1250,14 +1232,12 @@
 					"../../../addons/ofxHapPlayer-libavformat/libs/snappy/lib/osx",
 					"../../../addons/ofxHapPlayer-libavformat/libs/snappy/license",
 					"../../../addons/ofxHapPlayer-libavformat/src",
-					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/src,
 					../../../addons/ofxJSON/libs/jsoncpp,
 					../../../addons/ofxJSON/libs/jsoncpp/include,
 					../../../addons/ofxJSON/libs/jsoncpp/include/json,
 					../../../addons/ofxJSON/libs/jsoncpp/src,
-					../../../addons/ofxJSON/src,
-					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp,
-					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json,
+					../../../addons/ofxJSON/libs,
 					../../../addons/ofxLibwebsocketsJSON/libs/libwebsockets/include/,
 					../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include,
 					../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include/ofxLibwebsockets,
@@ -1271,6 +1251,7 @@
 					../../../addons/ofxSyphon/libs/Syphon/src,
 					../../../addons/ofxSyphon/src,
 					../../../addons/ofxVui/src,
+					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json,
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -1341,14 +1322,12 @@
 					"../../../addons/ofxHapPlayer-libavformat/libs/snappy/lib/osx",
 					"../../../addons/ofxHapPlayer-libavformat/libs/snappy/license",
 					"../../../addons/ofxHapPlayer-libavformat/src",
-					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/src,
 					../../../addons/ofxJSON/libs/jsoncpp,
 					../../../addons/ofxJSON/libs/jsoncpp/include,
 					../../../addons/ofxJSON/libs/jsoncpp/include/json,
 					../../../addons/ofxJSON/libs/jsoncpp/src,
-					../../../addons/ofxJSON/src,
-					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp,
-					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json,
+					../../../addons/ofxJSON/libs,
 					../../../addons/ofxLibwebsocketsJSON/libs/libwebsockets/include/,
 					../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include,
 					../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include/ofxLibwebsockets,
@@ -1362,6 +1341,7 @@
 					../../../addons/ofxSyphon/libs/Syphon/src,
 					../../../addons/ofxSyphon/src,
 					../../../addons/ofxVui/src,
+					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
