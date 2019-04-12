@@ -21,17 +21,21 @@ public:
         STATUS_CHECKING
     };
     
-    PixiServer(){
-        ofAddListener(ofEvents().update,this, &PixiServer::_update);
+    PixiServer(){};
+    ~PixiServer(){};
+    
+    void Start(string app_name){
+        setup(app_name);
         
-        setup("PixiVJ");
+        ofAddListener(ofEvents().update,this, &PixiServer::_update);
         
         testJSON.start();
         testJSON.addKeyValue("hello", "world");
         testJSON.end();
         
         connectionMessage.start();
-        connectionMessage.addKeyValueStr("request", "join:pixiserver");
+        connectionMessage.addKeyValueStr("request", "join:pixiserver", true);
+        connectionMessage.addKeyValueStr("app_name", app_name );
         connectionMessage.end();
         
         ofAddListener( ofxCpr::events().onResponse, this, &PixiServer::_onHttpResponse );
@@ -39,8 +43,7 @@ public:
         
         ofAddListener(SOCKET.onMessageEvent, this, &PixiServer::_onSocketMessage);
         ofAddListener(SOCKET.onConnectedEvent, this, &PixiServer::_onSocketConnected);
-    };
-    ~PixiServer(){};
+    }
     
     //---------------------------------------------------------------------------------
     
@@ -104,7 +107,7 @@ public:
 /////////////////////
 private:
     void _onSocketMessage(string& msg) {
-        //ofLog() << msg;
+        ofLog() << "[socket] " << msg;
         if ( message.parse(msg) ){
             //ofLog() << "[JSON] " << msg;
             ofNotifyEvent( onSocketMessage, message, this );
@@ -116,7 +119,7 @@ private:
     }
     
     void _onHttpResponse(ofxCpr::responseEventArgs& evt){
-        ofLog() << "PixiServer::onHttpResponse << " << evt.id << ": " << evt.response;
+        //ofLog() << "PixiServer::onHttpResponse << " << evt.id << ": " << evt.response;
         
         if ( evt.id == "PixiServer::CheckServer" ){
             if ( evt.response == "" ){
@@ -139,7 +142,7 @@ private:
                     SOCKET.setup(server_host, server_port, connectionMessage.getString() );
                 }
                 
-                update(testJSON);
+                //update(testJSON);
             }
         }
     }

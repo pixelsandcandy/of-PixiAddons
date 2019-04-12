@@ -25,11 +25,14 @@ void ofApp::setup(){
     //
     
     ofAddListener( SERVER.onSocketMessage, this, &ofApp::onSocketMessage );
+    SERVER.Start("PixiVJ");
     
 }
 
 void ofApp::onSocketMessage(ofxJSONElement& json){
-    ofLog() << "[JSON.getRawString()] " << json.getRawString();
+    //ofLog() << "[JSON.getRawString()] " << json.getRawString();
+    int index = ofToInt(json["video_index"].asString());
+    if ( index >= 0 && index <= videoPlayers.size()-1 ) video_index = index;
 }
 
 //--------------------------------------------------------------
