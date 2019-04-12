@@ -1,0 +1,8 @@
+ofxCpr
+ofxEasing
+ofxHapPlayer-libavformat
+ofxJSON
+ofxLibwebsocketsJSON
+ofxNetwork
+ofxSyphon
+ofxVui
