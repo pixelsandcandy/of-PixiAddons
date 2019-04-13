@@ -6,6 +6,7 @@
 #include "ofxCpr.h"
 
 #include "PixiServer.h"
+#include "Heartbeat.h"
 
 class ofApp : public ofBaseApp{
 
@@ -34,10 +35,20 @@ class ofApp : public ofBaseApp{
     //
     
     PixiServer SERVER;
+    Heartbeat HEART;
     
     //
     
     void onSocketMessage(ofxJSONElement& json);
+    void onServerConnected(string& res);
+    void onPulse(string& res);
+    void setVideoIndex(int newIndex);
+    void updateServer(bool uploadImages = true);
+    void onHttpResponse(ofxCpr::responseEventArgs& evt);
+    ofImage screenImg;
+    ofFbo saveImageFbo;
+    
+    bool shouldUpdate = false;
     
     //
     
@@ -47,6 +58,8 @@ class ofApp : public ofBaseApp{
     struct Video {
         bool hap = false;
         ofxHapPlayer player;
+        string img_src = "";
+        bool uploadingAsset = false;
     };
     
     vector<Video*> videoPlayers = vector<Video*>();

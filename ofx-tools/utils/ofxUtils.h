@@ -19,6 +19,14 @@ public:
         else return false;
     }
     
+    static ofVec2f clampSizeByWidth( float width, float height, float clampWidth ){
+        float ratio = height / width;
+        ofVec2f size;
+        size.x = clampWidth;
+        size.y = clampWidth*ratio;
+        return size;
+    }
+    
     static string getTextFromFile( string filepath ){
         string text = "";
         ofBuffer buffer = ofBufferFromFile(filepath);

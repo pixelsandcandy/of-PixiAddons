@@ -230,6 +230,8 @@
 		F791F95A76D5DAEF1804A219 /* payload.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = payload.h; path = ../../../addons/ofxCpr/libs/cpr/include/cpr/payload.h; sourceTree = SOURCE_ROOT; };
 		FB03F1B0A7C63D9FB2F5EF81 /* Server.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Server.h; path = ../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include/ofxLibwebsockets/Server.h; sourceTree = SOURCE_ROOT; };
 		FB6392684951B78ACE2A6FBE /* cookies.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = cookies.cpp; path = ../../../addons/ofxCpr/libs/cpr/src/cookies.cpp; sourceTree = SOURCE_ROOT; };
+		FC53A5F122616E8900506628 /* Heartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Heartbeat.h; path = "../../../ofx-tools/utils/Heartbeat.h"; sourceTree = "<group>"; };
+		FC53A5F222617E9E00506628 /* b64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = b64.h; path = "../../../ofx-tools/data/b64.h"; sourceTree = "<group>"; };
 		FC7AD3542261125B00F0C1F8 /* Websocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Websocket.h; sourceTree = "<group>"; };
 		FC7AD3552261125B00F0C1F8 /* Websocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Websocket.cpp; sourceTree = "<group>"; };
 		FC7AD357226112F700F0C1F8 /* ofxSweetJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxSweetJSON.h; path = ../utils/ofxSweetJSON.h; sourceTree = "<group>"; };
@@ -796,8 +798,10 @@
 		FC7AD3522261124300F0C1F8 /* ofx-tools */ = {
 			isa = PBXGroup;
 			children = (
+				FC53A5F222617E9E00506628 /* b64.h */,
 				FC7AD3642261244100F0C1F8 /* ofxUtils.cpp */,
 				FC7AD3632261244100F0C1F8 /* ofxUtils.h */,
+				FC53A5F122616E8900506628 /* Heartbeat.h */,
 				FC7AD3532261125B00F0C1F8 /* communication */,
 			);
 			path = "ofx-tools";
