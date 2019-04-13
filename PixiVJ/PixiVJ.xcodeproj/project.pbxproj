@@ -24,6 +24,7 @@
 		47AED73B14B09791F49B0309 /* MovieTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6178E820ECCA2128ED3FF1F /* MovieTime.cpp */; };
 		4D508D34156E7076531D9084 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D58DCB2C0AEFDE6171E29540 /* Syphon.framework */; };
 		5C0F6C44399859100D8AFBDE /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51DF4A8B99CDB3EFA417EDE6 /* Connection.cpp */; };
+		630D46DEBC2B6DC21603F304 /* ofxTextureRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34337B05439122D787E45362 /* ofxTextureRecorder.cpp */; };
 		66CA411C5A9664E27326BF36 /* ofxTCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C085E327DAB912CFA2A443D /* ofxTCPServer.cpp */; };
 		67E8F3CECC75E50391936A07 /* AudioResampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B28660E829D6CF8EA774980C /* AudioResampler.cpp */; };
 		6E07EC1B9369D41D12CF927E /* Events.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A83A8BF72DE9D4F1A004240 /* Events.cpp */; };
@@ -62,10 +63,10 @@
 		EDC1779E1E068FFF57242689 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA6E54A6F33D35A23B54BDC /* Util.cpp */; };
 		FB79F3DD598BADCAA0E54104 /* proxies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4EC7B96641C925CAFF06B28 /* proxies.cpp */; };
 		FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21BDE665988474F1B1F4D302 /* jsoncpp.cpp */; };
-		FC7AD3562261125B00F0C1F8 /* Websocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7AD3552261125B00F0C1F8 /* Websocket.cpp */; };
-		FC7AD359226112F700F0C1F8 /* ofxSweetJSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7AD358226112F700F0C1F8 /* ofxSweetJSON.cpp */; };
-		FC7AD35D2261138100F0C1F8 /* PixiServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7AD35B2261138100F0C1F8 /* PixiServer.cpp */; };
-		FC7AD3652261244200F0C1F8 /* ofxUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7AD3642261244100F0C1F8 /* ofxUtils.cpp */; };
+		FC53A5F72261AB1C00506628 /* Websocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC53A5F52261AB1C00506628 /* Websocket.cpp */; };
+		FC53A5FE2261AB3300506628 /* ofxUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC53A5F92261AB3300506628 /* ofxUtils.cpp */; };
+		FC53A5FF2261AB3300506628 /* ofxSweetJSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC53A5FA2261AB3300506628 /* ofxSweetJSON.cpp */; };
+		FC53A6032261AB4F00506628 /* PixiServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC53A6012261AB4F00506628 /* PixiServer.cpp */; };
 		FF85C8D02E9BD0366F69D8B1 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4DCCC531B4AA8E563EE8FAE /* util.cpp */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +140,7 @@
 		31D1A382E524C507FEE5FD9E /* AudioDecoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = AudioDecoder.cpp; path = "../../../addons/ofxHapPlayer-libavformat/libs/ofxHap/src/AudioDecoder.cpp"; sourceTree = SOURCE_ROOT; };
 		32D6F27DC6308427F9A278C1 /* ofxSyphonServer.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxSyphonServer.mm; path = ../../../addons/ofxSyphon/src/ofxSyphonServer.mm; sourceTree = SOURCE_ROOT; };
 		337B812806A0E7D26A029E5A /* ofxSyphonServerDirectory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSyphonServerDirectory.h; path = ../../../addons/ofxSyphon/src/ofxSyphonServerDirectory.h; sourceTree = SOURCE_ROOT; };
+		34337B05439122D787E45362 /* ofxTextureRecorder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTextureRecorder.cpp; path = ../../../addons/ofxTextureRecorder/src/ofxTextureRecorder.cpp; sourceTree = SOURCE_ROOT; };
 		354B4E11439CE116A1FCE3D3 /* VUIContainer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VUIContainer.h; path = ../../../addons/ofxVui/src/VUIContainer.h; sourceTree = SOURCE_ROOT; };
 		354EB67DFEE8DBC7277DADB5 /* session.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = session.cpp; path = ../../../addons/ofxCpr/libs/cpr/src/session.cpp; sourceTree = SOURCE_ROOT; };
 		35BB9BB90DBABFD3B39F8DB6 /* ofxUDPManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxUDPManager.cpp; path = ../../../addons/ofxNetwork/src/ofxUDPManager.cpp; sourceTree = SOURCE_ROOT; };
@@ -169,6 +171,7 @@
 		67D6E9F9AB4C3D7EA6B08C2F /* cookies.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cookies.h; path = ../../../addons/ofxCpr/libs/cpr/include/cpr/cookies.h; sourceTree = SOURCE_ROOT; };
 		6A656266A483AA57A582034E /* Reactor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Reactor.cpp; path = ../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/src/Reactor.cpp; sourceTree = SOURCE_ROOT; };
 		6AAE59F330CC83F9F3AA244D /* parameters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = parameters.cpp; path = ../../../addons/ofxCpr/libs/cpr/src/parameters.cpp; sourceTree = SOURCE_ROOT; };
+		6B44FCEE9BB8CEB2D2429F5D /* ofxTextureRecorder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxTextureRecorder.h; path = ../../../addons/ofxTextureRecorder/src/ofxTextureRecorder.h; sourceTree = SOURCE_ROOT; };
 		6BC7E562B4F98DD51426705A /* Reactor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Reactor.h; path = ../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include/ofxLibwebsockets/Reactor.h; sourceTree = SOURCE_ROOT; };
 		71FFD50EA75BCC76F0C58D12 /* SyphonNameboundClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SyphonNameboundClient.h; path = ../../../addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h; sourceTree = SOURCE_ROOT; };
 		761F3A9EFB68929D90BC7EAB /* AudioParameters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = AudioParameters.cpp; path = "../../../addons/ofxHapPlayer-libavformat/libs/ofxHap/src/AudioParameters.cpp"; sourceTree = SOURCE_ROOT; };
@@ -197,6 +200,7 @@
 		BAC93DE975B2C277F0B85457 /* Connection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Connection.h; path = ../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include/ofxLibwebsockets/Connection.h; sourceTree = SOURCE_ROOT; };
 		BF88F02779DD820913ACEA06 /* ofxTCPClient.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTCPClient.cpp; path = ../../../addons/ofxNetwork/src/ofxTCPClient.cpp; sourceTree = SOURCE_ROOT; };
 		C1416975DB84CC05204427AA /* payload.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = payload.cpp; path = ../../../addons/ofxCpr/libs/cpr/src/payload.cpp; sourceTree = SOURCE_ROOT; };
+		C147A27C14266A52E6C0C46E /* half.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = half.hpp; path = ../../../addons/ofxTextureRecorder/libs/half/include/half.hpp; sourceTree = SOURCE_ROOT; };
 		C4DCCC531B4AA8E563EE8FAE /* util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = util.cpp; path = ../../../addons/ofxCpr/libs/cpr/src/util.cpp; sourceTree = SOURCE_ROOT; };
 		C8C9B823D7872F9CBF03A813 /* ofxTCPClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxTCPClient.h; path = ../../../addons/ofxNetwork/src/ofxTCPClient.h; sourceTree = SOURCE_ROOT; };
 		CC2A9D3BA1FCA8117D48F7D9 /* Common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Common.h; path = "../../../addons/ofxHapPlayer-libavformat/libs/ofxHap/include/ofxHap/Common.h"; sourceTree = SOURCE_ROOT; };
@@ -230,16 +234,16 @@
 		F791F95A76D5DAEF1804A219 /* payload.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = payload.h; path = ../../../addons/ofxCpr/libs/cpr/include/cpr/payload.h; sourceTree = SOURCE_ROOT; };
 		FB03F1B0A7C63D9FB2F5EF81 /* Server.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Server.h; path = ../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include/ofxLibwebsockets/Server.h; sourceTree = SOURCE_ROOT; };
 		FB6392684951B78ACE2A6FBE /* cookies.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = cookies.cpp; path = ../../../addons/ofxCpr/libs/cpr/src/cookies.cpp; sourceTree = SOURCE_ROOT; };
-		FC53A5F122616E8900506628 /* Heartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Heartbeat.h; path = "../../../ofx-tools/utils/Heartbeat.h"; sourceTree = "<group>"; };
-		FC53A5F222617E9E00506628 /* b64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = b64.h; path = "../../../ofx-tools/data/b64.h"; sourceTree = "<group>"; };
-		FC7AD3542261125B00F0C1F8 /* Websocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Websocket.h; sourceTree = "<group>"; };
-		FC7AD3552261125B00F0C1F8 /* Websocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Websocket.cpp; sourceTree = "<group>"; };
-		FC7AD357226112F700F0C1F8 /* ofxSweetJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxSweetJSON.h; path = ../utils/ofxSweetJSON.h; sourceTree = "<group>"; };
-		FC7AD358226112F700F0C1F8 /* ofxSweetJSON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxSweetJSON.cpp; path = ../utils/ofxSweetJSON.cpp; sourceTree = "<group>"; };
-		FC7AD35B2261138100F0C1F8 /* PixiServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PixiServer.cpp; sourceTree = "<group>"; };
-		FC7AD35C2261138100F0C1F8 /* PixiServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixiServer.h; sourceTree = "<group>"; };
-		FC7AD3632261244100F0C1F8 /* ofxUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxUtils.h; path = "../../../ofx-tools/utils/ofxUtils.h"; sourceTree = "<group>"; };
-		FC7AD3642261244100F0C1F8 /* ofxUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxUtils.cpp; path = "../../../ofx-tools/utils/ofxUtils.cpp"; sourceTree = "<group>"; };
+		FC53A5F52261AB1C00506628 /* Websocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Websocket.cpp; path = "../../ofx-tools/communication/Websocket.cpp"; sourceTree = "<group>"; };
+		FC53A5F62261AB1C00506628 /* Websocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Websocket.h; path = "../../ofx-tools/communication/Websocket.h"; sourceTree = "<group>"; };
+		FC53A5F82261AB2800506628 /* b64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = b64.h; path = "../../ofx-tools/data/b64.h"; sourceTree = "<group>"; };
+		FC53A5F92261AB3300506628 /* ofxUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxUtils.cpp; path = "../../ofx-tools/utils/ofxUtils.cpp"; sourceTree = "<group>"; };
+		FC53A5FA2261AB3300506628 /* ofxSweetJSON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxSweetJSON.cpp; path = "../../ofx-tools/utils/ofxSweetJSON.cpp"; sourceTree = "<group>"; };
+		FC53A5FB2261AB3300506628 /* Heartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Heartbeat.h; path = "../../ofx-tools/utils/Heartbeat.h"; sourceTree = "<group>"; };
+		FC53A5FC2261AB3300506628 /* ofxSweetJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxSweetJSON.h; path = "../../ofx-tools/utils/ofxSweetJSON.h"; sourceTree = "<group>"; };
+		FC53A5FD2261AB3300506628 /* ofxUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxUtils.h; path = "../../ofx-tools/utils/ofxUtils.h"; sourceTree = "<group>"; };
+		FC53A6012261AB4F00506628 /* PixiServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PixiServer.cpp; sourceTree = "<group>"; };
+		FC53A6022261AB4F00506628 /* PixiServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixiServer.h; sourceTree = "<group>"; };
 		FF2B018E24837032A4878576 /* ofxEasing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxEasing.h; path = ../../../addons/ofxEasing/src/ofxEasing.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -256,6 +260,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00882DA852296D0DE4121AAB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				34337B05439122D787E45362 /* ofxTextureRecorder.cpp */,
+				6B44FCEE9BB8CEB2D2429F5D /* ofxTextureRecorder.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		017A3B1CA7978FBE5D0B416B /* half */ = {
+			isa = PBXGroup;
+			children = (
+				2F5A5E146EDDF4563895D0E4 /* include */,
+			);
+			name = half;
+			sourceTree = "<group>";
+		};
 		0A4D4786C1BA857FC9453E06 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +291,15 @@
 				E78F8991E56DEF594815BB53 /* src */,
 			);
 			name = ofxEasing;
+			sourceTree = "<group>";
+		};
+		0EE72FB70C816E7EDB6AF762 /* ofxTextureRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				00882DA852296D0DE4121AAB /* src */,
+				188BBAA1501F99B9C0744EB1 /* libs */,
+			);
+			name = ofxTextureRecorder;
 			sourceTree = "<group>";
 		};
 		0F6C067EEB9390774F041223 /* include */ = {
@@ -294,6 +324,14 @@
 				219374A14594D121F27FED3A /* src */,
 			);
 			name = ofxNetwork;
+			sourceTree = "<group>";
+		};
+		188BBAA1501F99B9C0744EB1 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				017A3B1CA7978FBE5D0B416B /* half */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 		1D02319193D2D8D25507477D /* ofxLibwebsockets */ = {
@@ -356,6 +394,14 @@
 				26A541233BC6F736E758F718 /* ofxJSONElement.h */,
 			);
 			name = src;
+			sourceTree = "<group>";
+		};
+		2F5A5E146EDDF4563895D0E4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C147A27C14266A52E6C0C46E /* half.hpp */,
+			);
+			name = include;
 			sourceTree = "<group>";
 		};
 		3204216537ED25BD1EC5766F /* src */ = {
@@ -597,6 +643,7 @@
 				324A8420B81534A615B46B8C /* ofxLibwebsocketsJSON */,
 				18240ECCE4076FB0833A8578 /* ofxNetwork */,
 				7F3C04577424427D348B1425 /* ofxSyphon */,
+				0EE72FB70C816E7EDB6AF762 /* ofxTextureRecorder */,
 				3270A5AFBCFBF648A20A006B /* ofxVui */,
 			);
 			name = addons;
@@ -723,11 +770,18 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				FC7AD3522261124300F0C1F8 /* ofx-tools */,
+				FC53A6002261AB4F00506628 /* PixiServer */,
+				FC53A5FB2261AB3300506628 /* Heartbeat.h */,
+				FC53A5FA2261AB3300506628 /* ofxSweetJSON.cpp */,
+				FC53A5FC2261AB3300506628 /* ofxSweetJSON.h */,
+				FC53A5F92261AB3300506628 /* ofxUtils.cpp */,
+				FC53A5FD2261AB3300506628 /* ofxUtils.h */,
+				FC53A5F82261AB2800506628 /* b64.h */,
+				FC53A5F52261AB1C00506628 /* Websocket.cpp */,
+				FC53A5F62261AB1C00506628 /* Websocket.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				FC7AD35A2261138100F0C1F8 /* PixiServer */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -795,35 +849,11 @@
 			name = cpr;
 			sourceTree = "<group>";
 		};
-		FC7AD3522261124300F0C1F8 /* ofx-tools */ = {
+		FC53A6002261AB4F00506628 /* PixiServer */ = {
 			isa = PBXGroup;
 			children = (
-				FC53A5F222617E9E00506628 /* b64.h */,
-				FC7AD3642261244100F0C1F8 /* ofxUtils.cpp */,
-				FC7AD3632261244100F0C1F8 /* ofxUtils.h */,
-				FC53A5F122616E8900506628 /* Heartbeat.h */,
-				FC7AD3532261125B00F0C1F8 /* communication */,
-			);
-			path = "ofx-tools";
-			sourceTree = "<group>";
-		};
-		FC7AD3532261125B00F0C1F8 /* communication */ = {
-			isa = PBXGroup;
-			children = (
-				FC7AD358226112F700F0C1F8 /* ofxSweetJSON.cpp */,
-				FC7AD357226112F700F0C1F8 /* ofxSweetJSON.h */,
-				FC7AD3542261125B00F0C1F8 /* Websocket.h */,
-				FC7AD3552261125B00F0C1F8 /* Websocket.cpp */,
-			);
-			name = communication;
-			path = "../../../ofx-tools/communication";
-			sourceTree = "<group>";
-		};
-		FC7AD35A2261138100F0C1F8 /* PixiServer */ = {
-			isa = PBXGroup;
-			children = (
-				FC7AD35B2261138100F0C1F8 /* PixiServer.cpp */,
-				FC7AD35C2261138100F0C1F8 /* PixiServer.h */,
+				FC53A6012261AB4F00506628 /* PixiServer.cpp */,
+				FC53A6022261AB4F00506628 /* PixiServer.h */,
 			);
 			name = PixiServer;
 			path = ../../PixiServer;
@@ -916,16 +946,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC7AD3562261125B00F0C1F8 /* Websocket.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				39F46C7B9E37A37504CF6C5C /* ofxCpr.cpp in Sources */,
 				E3AA7405BC83C8DCB1F7CA59 /* digest.cpp in Sources */,
 				72E9A08FC50C1746EBE02825 /* parameters.cpp in Sources */,
+				FC53A5F72261AB1C00506628 /* Websocket.cpp in Sources */,
 				FF85C8D02E9BD0366F69D8B1 /* util.cpp in Sources */,
 				20F0849D6F3EDC0A3EFE3990 /* payload.cpp in Sources */,
 				85831912F64B8FE79ABBC874 /* error.cpp in Sources */,
 				9897B2C4F7A20D1616C12941 /* ssl_options.cpp in Sources */,
+				FC53A5FE2261AB3300506628 /* ofxUtils.cpp in Sources */,
 				FB79F3DD598BADCAA0E54104 /* proxies.cpp in Sources */,
 				D266BC29DBB609600F23DD1A /* session.cpp in Sources */,
 				A85874060057B32F07CFB3D5 /* cprtypes.cpp in Sources */,
@@ -933,6 +964,7 @@
 				409D970A15CCB76D8EB27C0C /* cookies.cpp in Sources */,
 				7C75A3023FA8CA95D98DBD4F /* timeout.cpp in Sources */,
 				BDBD6EB7B45BF434B7B1A394 /* auth.cpp in Sources */,
+				FC53A5FF2261AB3300506628 /* ofxSweetJSON.cpp in Sources */,
 				08C23182D394C53F6ECE6CCC /* easing_terms_of_use.html in Sources */,
 				02A031249CAC1E42B926D833 /* ofxHapPlayer.cpp in Sources */,
 				2B5874D615AB9A801EEEDA74 /* hap.c in Sources */,
@@ -958,14 +990,13 @@
 				E2564CF7DDB3713772BB682E /* ofxUDPManager.cpp in Sources */,
 				66CA411C5A9664E27326BF36 /* ofxTCPServer.cpp in Sources */,
 				125506CD3E5F428AAFE5CC65 /* ofxTCPManager.cpp in Sources */,
-				FC7AD3652261244200F0C1F8 /* ofxUtils.cpp in Sources */,
 				960D20B191346612D5C05A6A /* ofxTCPClient.cpp in Sources */,
 				8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */,
-				FC7AD35D2261138100F0C1F8 /* PixiServer.cpp in Sources */,
+				FC53A6032261AB4F00506628 /* PixiServer.cpp in Sources */,
 				1F558B76FB3412843DDAA031 /* ofxSyphonClient.mm in Sources */,
 				11DF9AB1B4EAA63E3B190CA0 /* ofxSyphonServerDirectory.mm in Sources */,
 				C9109422648B170B07A778CF /* SyphonNameboundClient.m in Sources */,
-				FC7AD359226112F700F0C1F8 /* ofxSweetJSON.cpp in Sources */,
+				630D46DEBC2B6DC21603F304 /* ofxTextureRecorder.cpp in Sources */,
 				75AF471ABD41F8CD9BC2F2F3 /* ofxVui.cpp in Sources */,
 				7393C69879CF9C20D08EB297 /* VUISlider.cpp in Sources */,
 				E7913D3F16E81DBFD6538DA9 /* VUITextField.cpp in Sources */,
@@ -1008,6 +1039,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					../../../addons/ofxCpr/libs,
 					../../../addons/ofxCpr/libs/cpr,
 					../../../addons/ofxCpr/libs/cpr/include,
@@ -1055,6 +1087,10 @@
 					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
 					../../../addons/ofxSyphon/libs/Syphon/src,
 					../../../addons/ofxSyphon/src,
+					../../../addons/ofxTextureRecorder/libs,
+					../../../addons/ofxTextureRecorder/libs/half,
+					../../../addons/ofxTextureRecorder/libs/half/include,
+					../../../addons/ofxTextureRecorder/src,
 					../../../addons/ofxVui/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -1111,6 +1147,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					../../../addons/ofxCpr/libs,
 					../../../addons/ofxCpr/libs/cpr,
 					../../../addons/ofxCpr/libs/cpr/include,
@@ -1158,6 +1195,10 @@
 					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
 					../../../addons/ofxSyphon/libs/Syphon/src,
 					../../../addons/ofxSyphon/src,
+					../../../addons/ofxTextureRecorder/libs,
+					../../../addons/ofxTextureRecorder/libs/half,
+					../../../addons/ofxTextureRecorder/libs/half/include,
+					../../../addons/ofxTextureRecorder/src,
 					../../../addons/ofxVui/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -1206,9 +1247,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				GCC_PREPROCESSOR_DEFINITIONS = USING_ofxVui;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					../../../addons/ofxCpr/libs,
 					../../../addons/ofxCpr/libs/cpr,
 					../../../addons/ofxCpr/libs/cpr/include,
@@ -1236,12 +1277,14 @@
 					"../../../addons/ofxHapPlayer-libavformat/libs/snappy/lib/osx",
 					"../../../addons/ofxHapPlayer-libavformat/libs/snappy/license",
 					"../../../addons/ofxHapPlayer-libavformat/src",
-					../../../addons/ofxJSON/src,
+					../../../addons/ofxJSON/libs,
 					../../../addons/ofxJSON/libs/jsoncpp,
 					../../../addons/ofxJSON/libs/jsoncpp/include,
 					../../../addons/ofxJSON/libs/jsoncpp/include/json,
 					../../../addons/ofxJSON/libs/jsoncpp/src,
-					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/src,
+					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp,
+					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json,
 					../../../addons/ofxLibwebsocketsJSON/libs/libwebsockets/include/,
 					../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include,
 					../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include/ofxLibwebsockets,
@@ -1254,15 +1297,17 @@
 					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
 					../../../addons/ofxSyphon/libs/Syphon/src,
 					../../../addons/ofxSyphon/src,
+					../../../addons/ofxTextureRecorder/libs,
+					../../../addons/ofxTextureRecorder/libs/half,
+					../../../addons/ofxTextureRecorder/libs/half/include,
+					../../../addons/ofxTextureRecorder/src,
 					../../../addons/ofxVui/src,
-					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json,
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_FRAMEWORKS)",
 					"$(OF_CORE_LIBS)",
@@ -1296,9 +1341,9 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				GCC_PREPROCESSOR_DEFINITIONS = USING_ofxVui;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					../../../addons/ofxCpr/libs,
 					../../../addons/ofxCpr/libs/cpr,
 					../../../addons/ofxCpr/libs/cpr/include,
@@ -1326,12 +1371,14 @@
 					"../../../addons/ofxHapPlayer-libavformat/libs/snappy/lib/osx",
 					"../../../addons/ofxHapPlayer-libavformat/libs/snappy/license",
 					"../../../addons/ofxHapPlayer-libavformat/src",
-					../../../addons/ofxJSON/src,
+					../../../addons/ofxJSON/libs,
 					../../../addons/ofxJSON/libs/jsoncpp,
 					../../../addons/ofxJSON/libs/jsoncpp/include,
 					../../../addons/ofxJSON/libs/jsoncpp/include/json,
 					../../../addons/ofxJSON/libs/jsoncpp/src,
-					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/src,
+					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp,
+					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json,
 					../../../addons/ofxLibwebsocketsJSON/libs/libwebsockets/include/,
 					../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include,
 					../../../addons/ofxLibwebsocketsJSON/libs/ofxLibwebsockets/include/ofxLibwebsockets,
@@ -1344,15 +1391,17 @@
 					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
 					../../../addons/ofxSyphon/libs/Syphon/src,
 					../../../addons/ofxSyphon/src,
+					../../../addons/ofxTextureRecorder/libs,
+					../../../addons/ofxTextureRecorder/libs/half,
+					../../../addons/ofxTextureRecorder/libs/half/include,
+					../../../addons/ofxTextureRecorder/src,
 					../../../addons/ofxVui/src,
-					../../../addons/ofxLibwebsocketsJSON/libs/jsoncpp/json,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_FRAMEWORKS)",
 					"$(OF_CORE_LIBS)",

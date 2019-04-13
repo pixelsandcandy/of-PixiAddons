@@ -5,4 +5,5 @@ ofxJSON
 ofxLibwebsocketsJSON
 ofxNetwork
 ofxSyphon
+ofxTextureRecorder
 ofxVui
